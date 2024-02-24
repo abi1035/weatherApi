@@ -1,0 +1,150 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+.tempReading{
+    /* border: 10px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+}
+
+.lowTemp,.highTemp{
+    /* border: 10px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temperature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clouds,.rainRep{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dailyTempReading{
+    /* border:  10px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+h2{
+    margin-top: 0px;
+}
+
+/* .lowerPortion{
+    background-color: rgb(219, 219, 219);
+} */
+
+
+
+.wholePortion {
+    background: linear-gradient(180deg, #76a7d5, #448ab8, #7e9dc7,#cddef5);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:58% 0%}
+    50%{background-position:43% 100%}
+    100%{background-position:58% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:58% 0%}
+    50%{background-position:43% 100%}
+    100%{background-position:58% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:58% 0%}
+    50%{background-position:43% 100%}
+    100%{background-position:58% 0%}
+}
+
+.dailyHeading{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    /* border: 10px solid red; */
+    padding: 15px 5px;
+    height: 100px;
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+}
+
+button{
+    height: 100px;
+    width: 200px;
+}
+
+h1{
+    margin: 0;
+}
+
+
+
+
+
+.fullTime,.fullTemp{
+    /* border: 10px solid red; */
+    display: grid;
+    grid-template-columns: repeat(24,1fr);
+    text-align: center;
+}
+
+
+.toronto{
+    background-image: url("../images/CN-Tower-evening.jpg");
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    color: white;
+    font-weight: bold;
+}
+
+.chennai{
+    background-image: url("../images/Chennai-central-evening.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    font-weight: bold;
+}
+
+
+.germany{
+    background-image: url("../images/frankfurt.jpg");
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    color: white;
+    font-weight: bold;
+}
+
+.middleLayer{
+    margin: 0;
+    background-color: rgb(232, 231, 231);
+}
+
+/* button{
+    height: 400px;
+    width: 400px;
+} */
+
+

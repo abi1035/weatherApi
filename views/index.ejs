@@ -1,0 +1,136 @@
+<%- include("header.ejs")%> 
+
+
+
+
+<h1 style="text-align: center;">Toronto</h1>
+
+<div class="temperature">
+    <img src="../images/thermometer-outline.svg" alt="" height="90px" width="80px">
+<div class="tempReading">
+
+<div class="highTemp">
+<h2>Highest</h2>
+<h3><%=Math.round(highTemp) %> °C</h3>
+</div>
+
+<div class="lowTemp">
+<h2>Lowest</h2>
+<h3><%=Math.round(lowestTemp) %> °C</h3>
+</div>
+</div>
+</div>
+
+
+
+<div class="clouds">
+    <% if(locals.percentageOfCloud){ %>
+        <img src="../images/cloudy-outline.svg" alt="" height="90px" width="80px">
+    <h2 id="clouds"><%= percentageOfCloud%>% <%= statusOfSky %></h2>
+    <% }else if(!locals.percentageOfCloud){%>
+        <img src="../images/sunny-outline.svg" alt="" height="90px" width="80px">
+       <h2> <%= statusOfSky %></h2>
+    <% } %>
+
+
+    <% if(locals.statusOfSnow){ %>
+    <img src="../images/snow-outline.svg" alt="" height="90px" width="80px">
+    <h2><%= statusOfSnow %> cm of snow today</h2>
+    <%}%>
+    </div>
+
+<div class="rainRep">
+<img src="../images/thunderstorm-outline.svg" alt="" height="90px" width="80px">
+<h2 id="rain"><%= percentageOfRain %>mm of rain today</h2>
+</div>
+
+
+
+
+
+<h2 style="text-align: center;">Daily Reading</h2>
+
+
+<div class="dailyTempReading">
+<div class="fullTime">
+
+    <p class="time">00:00</p>
+    <p class="time">01:00</p>
+    <p class="time">02:00</p>
+    <p class="time">03:00</p>
+    <p class="time">04:00</p>
+    <p class="time">05:00</p>
+    <p class="time">06:00</p>
+    <p class="time">07:00</p>
+    <p class="time">08:00</p>
+    <p class="time">09:00</p>
+    <p class="time">10:00</p>
+    <p class="time">11:00</p>
+    <p class="time">12:00</p>
+    <p class="time">13:00</p>
+    <p class="time">14:00</p>
+    <p class="time">15:00</p>
+    <p class="time">16:00</p>
+    <p class="time">17:00</p>
+    <p class="time">18:00</p>
+    <p class="time">19:00</p>
+    <p class="time">20:00</p>
+    <p class="time">21:00</p>
+    <p class="time">22:00</p>
+    <p class="time">23:00</p>
+
+</div>
+
+<div class="fullTemp">
+    
+    <% temperature.forEach(temp => {%>
+     <p class="item"><%=Math.round(temp) %> °C</p> 
+    <% }); %>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+    
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include("footer.ejs")%> 

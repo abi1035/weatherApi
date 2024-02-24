@@ -1,0 +1,29 @@
+<%- include("header.ejs")%> 
+
+<h1>weatherMeteo</h1>
+<h2><%=Math.round(highTemp) %> C</h2>
+<h2><%=Math.round(lowestTemp) %> C</h2>
+
+<h4 id="rain"></h4>
+
+
+
+
+
+
+
+
+<script>
+if(rain===0){
+    console.log(`No chance of rain`)
+    document.getElementById("rain").innerHTML="No chance of rain"
+}else if(rain>=25&&rain<=49){
+    console.log(`Small chance of raining`)
+    document.getElementById("rain").innerHTML="Small chance of raining"
+}else if(rain>=50){
+    console.log(`Huge chance of rain, grab an umbrella`)
+    document.getElementById("rain").innerHTML="Huge chance of rain, grab an umbrella"
+}
+</script>
+
+<%- include("footer.ejs")%> 
